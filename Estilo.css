@@ -1,0 +1,207 @@
+
+/* === Estilo geral === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Cabeçalho === */
+.header {
+    background-color: #233670;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+/* === Container dos destinos === */
+.container {
+    display: flex;             /* Usando Flexbox para centralizar os cartões */
+    flex-wrap: wrap;           /* Permite que as caixas quebrem linha */
+    justify-content: center;   /* Centraliza as caixas horizontalmente */
+    gap: 20px;                 /* Espaçamento entre os cartões */
+    padding: 20px;
+}
+
+/* === Cartões de destino === */
+.destination-card {
+    background-color: white;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;  /* Suaviza o efeito ao passar o mouse */
+}
+
+/* Efeito de destaque ao passar o mouse */
+.destination-card:hover {
+    transform: scale(1.03);     /* Leve zoom no cartão */
+}
+
+/* === Imagens dos cartões === */
+.destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* === Título do destino === */
+.destination-card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+/* === Descrição do destino === */
+.destination-card p {
+    color: #555;
+    margin: 10px 0;
+}
+
+/* === Botão dentro do cartão === */
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #233670;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+	
+}
+.hiperligacoes {
+	color: white;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ajusta a altura para que o vídeo fique no centro da tela */
+}
+
+
+.texto {
+    color: white;              /* texto branco */
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* === Rodapé === */
+.footer {
+    text-align: center;
+    background-color: #233670;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Estilo do contêiner que envolve o texto */
+.caixa-de-texto {
+    background-color: #233670;
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px 0; /* Espaçamento entre caixas */
+    width: 80%; /* Largura do contêiner */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza a caixa */
+}
+
+/* Estilo para os títulos dentro da caixa */
+.caixa-de-texto h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;	/* Espaçamento abaixo do título */
+	color: white;
+}
+
+/* Estilo para o texto dentro da caixa */
+.caixa-de-texto p {
+    font-size: 1em;
+    line-height: 1.6; /* Aumenta a altura da linha para facilitar a leitura */
+	color: white;
+}
+
+.caixa-de-texto li {
+    margin-bottom: 8px; /* Espaçamento entre os itens da lista */
+    color: white; /* Cor suave para os itens da lista */
+}
+
+.caixa-de-texto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-de-texto,
+.caixa-de-texto * {
+    color: white;
+}
+
+.caixa-de-texto input,
+.caixa-de-texto textarea {
+    background-color: white;
+    color: black; /* para o texto dentro ficar legível */
+}
+
+
+.escuro {
+    background-color: #233670; /* azul escuro */
+    color: white;              /* texto branco */
+    text-align: center;
+    padding: 20px;
+}
+
+.centraliza-botao {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Seção da tabela */
+.secao-tabela {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.secao-tabela h2 {
+    color: #233670;
+    margin-bottom: 20px;
+}
+
+/* Estilo da tabela */
+.tabela-precos {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabela-precos th,
+.tabela-precos td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-precos th {
+    background-color: #233670;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tabela-precos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+

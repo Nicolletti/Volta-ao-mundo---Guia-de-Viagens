@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt"> <!-- Definindo o idioma do conteúdo da página como português -->
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Volta ao Mundo</title> <!-- O título da aba do navegador -->
+    <link rel="stylesheet" href="Estilo.css"> <!-- Ligação do CSS externo -->
+	
+	<style>
+
+    .sugestao-container {
+      display: flex;           /* ativa Flexbox */
+      justify-content: center; /* centraliza horizontalmente o form */
+      margin-top: 20px;        /* espaço do topo */
+    }
+
+    .sugestao-form {
+      display: flex;           /* ativa Flexbox no form */
+      flex-direction: column;  /* organiza textarea e botão em coluna */
+      align-items: center;     /* centraliza horizontalmente */
+      gap: 10px;               /* espaço entre a caixa e o botão */
+    }
+
+    .sugestao-textarea {
+      width: 300px;                         /* largura da caixa */
+      height: 100px;                        /* altura da caixa */
+      border-radius: 12px;                  /* cantos arredondados */
+      padding: 10px;                        /* espaço interno */
+      font-size: 14px;                      /* tamanho da fonte */
+      resize: none;                         /* impede redimensionamento manual */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);/* sombra leve */
+      outline: none;                        /* remove contorno azul padrão */
+      border: 1px solid #ccc;               /* borda cinza */
+    }
+
+    .sugestao-textarea:focus {
+      border-color: #4a90e2;                 /* borda azul ao focar */
+      box-shadow: 0 0 6px rgba(74,144,226,0.3); /* sombra azul */
+    }
+
+    .sugestao-button {
+      width: 120px;               /* largura do botão */
+      padding: 10px;              /* espaço interno */
+      border-radius: 12px;        /* cantos arredondados */
+      background-color: #233670;  /* cor de fundo */
+      color: white;               /* cor do texto */
+      font-size: 14px;            /* tamanho da fonte */
+      cursor: pointer;            /* cursor de mão */
+      transition: background-color 0.2s ease; /* animação suave */
+      border: none;               /* sem borda padrão */
+    }
+
+    .sugestao-button:hover {
+      background-color: #3a7bd5;  /* azul mais claro ao passar o mouse */
+    }
+
+  </style>
+
+</head>
+<body>
+
+    <!-- Cabeçalho da página -->
+    <div class="header">
+		
+		<a href="Index.html">
+        <img src="Logo_Empresa.png" alt="Logo" width="120" height="auto" style="float: left; margin-right: 30px;">
+		</a>
+		
+		<h1>Volta ao Mundo</h1> <!-- Título principal da página -->
+		
+		<h3><ins>O seu ponto de partida para explorar o planeta.</ins></h3>
+    </div>
+	
+
+	<h2 style="color: #233670; text-align: center;">Destinos mais populares:</h2>
+
+    <!-- Container que contém os cartões de destinos -->
+    <div class="container">
+        
+        <!-- Cartão para Paris -->
+        <div class="destination-card">
+            <img src="Paris.jpg" alt="Paris"> <!-- Imagem de Paris -->
+            <h3>Paris, França</h3> <!-- Nome do destino -->
+            <p>Paris é a cidade do amor, famosa por sua arquitetura, museus e gastronomia.</p> <!-- Descrição curta sobre Paris -->
+            <a href="Franca_Inf.html" class="button">Explorar Paris</a> <!-- Botão de ação -->
+        </div>
+
+        <!-- Cartão para Tóquio -->
+        <div class="destination-card">
+            <img src="Toquio.jpg" alt="Tokyo"> <!-- Imagem de Tóquio -->
+            <h3>Tóquio, Japão</h3> <!-- Nome do destino -->
+            <p>Tóquio é uma fusão entre a modernidade e tradições milenares.</p> <!-- Descrição curta sobre Tóquio -->
+            <a href="Toquio_Inf.html" class="button">Explorar Tóquio</a> <!-- Botão de ação -->
+        </div>
+
+        <!-- Cartão para Nova York -->
+        <div class="destination-card">
+            <img src="NovaYork.jpg" alt="Nova York"> <!-- Imagem de Nova York -->
+            <h3>Nova York, EUA</h3> <!-- Nome do destino -->
+            <p>Nova York é uma cidade vibrante conhecida pelos seus monumentos e cultura.</p> <!-- Descrição curta sobre Nova York -->
+            <a href="NewYork_Inf.html" class="button">Explorar Nova York</a> <!-- Botão de ação -->
+        </div>
+
+        <!-- Cartão para Roma -->
+        <div class="destination-card">
+            <img src="Roma.jpg" alt="Roma"> <!-- Imagem de Roma -->
+            <h3>Roma, Itália</h3> <!-- Nome do destino -->
+            <p>Roma é um museu ao ar livre, com muita história e arquitetura antiga.</p> <!-- Descrição curta sobre Roma -->
+            <a href="Roma_Inf.html" class="button">Explorar Roma</a> <!-- Botão de ação -->
+        </div>
+		
+		
+
+    </div>
+	
+	<section class="secao-tabela">
+    <h2>Comparativo de Custos Diários (em €)</h2>
+
+    <table class="tabela-precos">
+        <thead>
+            <tr>
+                <th>Destino</th>
+                <th>Estadia</th>
+                <th>Alimentação</th>
+                <th>Transporte</th>
+                <th>Entretenimento</th>
+                <th>Total por Dia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paris, França</td>
+                <td>€120</td>
+                <td>€45</td>
+                <td>€15</td>
+                <td>€30</td>
+                <td><strong>€210</strong></td>
+            </tr>
+            <tr>
+                <td>Tóquio, Japão</td>
+                <td>€100</td>
+                <td>€35</td>
+                <td>€10</td>
+                <td>€25</td>
+                <td><strong>€170</strong></td>
+            </tr>
+            <tr>
+                <td>Nova York, EUA</td>
+                <td>€150</td>
+                <td>€50</td>
+                <td>€20</td>
+                <td>€40</td>
+                <td><strong>€260</strong></td>
+            </tr>
+            <tr>
+                <td>Roma, Itália</td>
+                <td>€90</td>
+                <td>€30</td>
+                <td>€10</td>
+                <td>€25</td>
+                <td><strong>€155</strong></td>
+            </tr>
+        </tbody>
+    </table>
+	</section>
+	
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	
+	<h2 style="color: #233670; text-align: center;">Deixe aqui mais sugestões:</h2>>
+	
+	<!-- Container que centraliza o formulário -->
+	<div class="sugestao-container">
+		<!-- Formulário visual (não armazena nada) -->
+		<form class="sugestao-form">
+		  <!-- Caixa de texto -->
+		  <textarea class="sugestao-textarea" placeholder="Digite aqui..."></textarea>
+		  <!-- Botão de reset que limpa a caixa -->
+		  <button type="reset" class="button" onclick="alert('Sugestão Enviada!')"> Enviar </button>
+		</form>
+	</div>
+
+
+    <!-- Rodapé da página -->
+    <div class="footer">
+        <p>Mateus Nicolletti - © 2025 Volta ao Mundo. <a href="Sobre_Empresa.html" class="hiperligacoes">Sobre nós</a>.<a href="Formulario_Inscricao.html" class="hiperligacoes">Receber Promoções</a>.</p> <!-- Texto do rodapé -->
+    </div>
+
+</body>
+</html>

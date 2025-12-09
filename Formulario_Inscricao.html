@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt"> <!-- Definindo o idioma do conteúdo da página como português -->
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Volta ao Mundo</title> <!-- O título da aba do navegador -->
+    <link rel="stylesheet" href="Estilo.css"> <!-- Ligação do CSS externo -->
+</head>
+<body>
+
+	<div class="header">
+		<h1>Inscreva-se para receber promoções!</h1>
+	</div>
+
+	<div class="caixa-de-texto">
+	  <h2>Formulário de Inscrição</h2>
+	  <form>
+
+		<fieldset>
+		  <legend>Dados Pessoais</legend>
+		  <label>Nome Completo:</label><br>
+		  <input type="text" name="nome" placeholder="Digite o seu nome"><br><br>
+
+		  <label>Email:</label><br>
+		  <input type="text" name="email" placeholder="Digite o email"><br><br>
+
+		  <label>Género:</label><br>
+		  <input type="radio" name="genero" value="masculino"> Masculino<br>
+		  <input type="radio" name="genero" value="feminino"> Feminino
+		</fieldset><br>
+
+		<fieldset>
+		  <legend>Países de Interesse:</legend>
+		  <label><input type="checkbox" value="programacao"> Paris</label><br>
+		  <label><input type="checkbox" value="redes"> Tóquio</label><br>
+		  <label><input type="checkbox" value="hardware"> Nova York</label><br>
+		  <label><input type="checkbox" value="seguranca"> Roma</label><br>
+		</fieldset><br>
+		
+		<fieldset>
+		  <legend> Qual Será o seu Próximo Destino?</legend>
+			  <select id="escolha" name="opcoes" style="color: black; background-color: white;">
+				<option value="opcao1" style="color: black;">Paris</option>
+				<option value="opcao2" selected style="color: black;">Tóquio</option>
+				<option value="opcao3" style="color: black;">Nova York</option>
+				<option value="opcao4" style="color: black;">Roma</option>
+			  </select>
+		</fieldset><br>
+
+		<fieldset>
+		  <legend>Sugestões:</legend>
+		  <label>O que podemos melhorar?</label><br>
+		  <textarea name="motivo" rows="4" cols="40" placeholder="Escreve aqui..."></textarea>
+		</fieldset><br>
+
+		<fieldset>
+		  <legend>Enviar</legend>
+		  <button type="reset" onclick="alert('Formulário Enviado!')">Enviar</button>
+		</fieldset>
+
+	  </form>
+	</div>
+
+
+	
+	<p>&nbsp;</p>
+	
+	<div class="centraliza-botao">
+	<a href="Index.html" class="button" align=center>Voltar</a> <!-- Botão de ação -->
+	</div>
+
+    <!-- Rodapé da página -->
+    <div class="footer">
+        <p>© 2025 Volta ao Mundo. <a href="Sobre_Empresa.html" class="hiperligacoes">Sobre nós</a>.<a href="Formulario_Inscricao.html" class="hiperligacoes">Receber Promoções</a>.</p> <!-- Texto do rodapé -->
+    </div>
+
+</body>
+</html>
